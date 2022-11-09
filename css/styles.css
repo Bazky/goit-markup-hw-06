@@ -245,6 +245,9 @@ img {
   border-radius: 4px;
   margin-top: 30px;
 }
+
+/* modal */ /* modal */ /* modal */ /* modal */ /* modal */ /* modal */
+
 .backdrop {
   position: fixed;
   display: flex;
@@ -256,9 +259,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
 }
+
 .is-hidden {
   transform: translateY(-100%);
 }
+
 .modal {
   width: 528px;
   height: 581px;
@@ -268,20 +273,95 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .modal-btn {
+  display: flex;
   width: 30px;
   height: 30px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  border: 1px solid;
+  border: 1px solid var(--client-borders);
   background-color: var(--white);
-  margin-left: 95%;
-  margin-top: -4px;
+  margin-left: 480px;
 }
+
 .x {
   width: 11px;
   height: 11px;
 }
+
+.modal-main-text {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fieldset {
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+  border-radius: 6px;
+  height: 40px;
+  align-items: center;
+  margin-block: 28px;
+}
+
+.fieldset:has(input:focus) {
+  border-color: var(--lightblue);
+}
+
+.fieldset:has(input:focus) .modal-icon {
+  fill: var(--lightblue);
+}
+
+.fieldset-comments {
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.my-form {
+  padding: 0 35px;
+}
+
+.label .fieldset {
+  font-size: 12px;
+  margin-left: -2px;
+  color: var(--client-borders);
+}
+
+.my-form .modal-icon {
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+}
+
+.my-form .label {
+  position: absolute;
+  top: -18px;
+}
+
+.my-form .input {
+  border: 0;
+  background-color: transparent;
+}
+
+.my-form .input:focus {
+  outline: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.legal-checkbox {
+  margin-top: 20px;
+  width: 16px;
+  height: 15px;
+  padding: 0 15px;
+}
+
+/* modal */ /* modal */ /* modal */ /* modal */ /* modal */ /* modal */
+
 /* main background */ /* main background */ /* main background */ /* main background */
 
 /* description section */ /* description section */ /* description section */ /* description section */

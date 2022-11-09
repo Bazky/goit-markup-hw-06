@@ -69,13 +69,65 @@
             Request our service
           </button>
 
-          <div class="backdrop is-hidden" data-modal>
+          <div class="backdrop" data-modal>
             <div class="modal">
               <button class="modal-btn" data-modal-close>
                 <svg class="x">
                   <use href="./images/icons.svg#vector"></use>
                 </svg>
               </button>
+
+              <form class="my-form">
+                <h2 class="modal-main-text">
+                  Leave your information and we'll call you back
+                </h2>
+
+                <fieldset class="fieldset">
+                  <label for="name" class="label">Name</label>
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg#name"></use>
+                  </svg>
+                  <input class="input" type="text" id="name" />
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <label for="telephone" class="label">Telephone</label>
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg#modal-tel"></use>
+                  </svg>
+                  <input
+                    class="input"
+                    type="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                    id="telephone"
+                  />
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <label for="email" class="label">E-mail</label>
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg#modal-mail"></use>
+                  </svg>
+                  <input class="input" type="email" id="email" />
+                </fieldset>
+
+                <fieldset class="fieldset fieldset-comments">
+                  <label for="comments" class="label">Comments</label>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Enter the text"
+                    id="comments"
+                  />
+                </fieldset>
+
+                <label class="legal-checkbox">
+                  <input class="checkbox" type="checkbox" id="legal" />
+                  I agree with the newsletter and accept the Terms and
+                  Conditions
+                  <button class="buttonjs" type="submit">Send</button>
+                </label>
+              </form>
             </div>
           </div>
         </div>
