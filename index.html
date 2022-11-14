@@ -69,7 +69,7 @@
             Request our service
           </button>
 
-          <div class="backdrop" data-modal>
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-btn" data-modal-close>
                 <svg class="x">
@@ -113,19 +113,26 @@
 
                 <fieldset class="fieldset fieldset-comments">
                   <label for="comments" class="label">Comments</label>
-                  <input
-                    class="input"
-                    type="text"
-                    placeholder="Enter the text"
+                  <textarea
+                    class="textarea-comment input"
                     id="comments"
-                  />
+                    placeholder="Enter the text"
+                  >
+                  </textarea>
                 </fieldset>
 
                 <label class="legal-checkbox">
-                  <input class="checkbox" type="checkbox" id="legal" />
-                  I agree with the newsletter and accept the Terms and
-                  Conditions
-                  <button class="buttonjs" type="submit">Send</button>
+                  <input type="checkbox" id="legal" />
+
+                  <p class="checkbox">
+                    I agree with the newsletter and accept the Terms and
+                    Conditions
+                  </p>
+                  <span class="checkmark"></span>
+
+                  <button class="form-button buttonjs" type="submit">
+                    Send
+                  </button>
                 </label>
               </form>
             </div>
