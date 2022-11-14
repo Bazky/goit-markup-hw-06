@@ -324,6 +324,10 @@ img {
   margin-bottom: 0;
 }
 
+.fieldset-comments:has(textarea:focus) {
+  border-color: var(--lightblue);
+}
+
 .textarea-comment {
   position: absolute;
   height: 100%;
@@ -392,9 +396,7 @@ img {
 }
 
 .legal-checkbox .checkmark {
-  margin-top: 25px;
-  margin-left: 15px;
-  top: 0;
+  margin-top: 26px;
   position: absolute;
   width: 16px;
   height: 15px;
@@ -423,6 +425,10 @@ img {
 .legal-checkbox input:checked ~ .checkmark {
   background-color: var(--lightblue);
   border-color: var(--lightblue);
+}
+
+.modal-terms {
+  color: var(--lightblue);
 }
 
 .form-button {
@@ -621,7 +627,6 @@ img {
 /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */
 
 .background-footer {
-  box-sizing: border-box;
   background-color: var(--darkblue);
 }
 .footer-container {
@@ -643,7 +648,6 @@ img {
 .find {
   display: flex;
   font-weight: 700;
-  font-size: 14px;
   margin-bottom: 20px;
 }
 .footer-icon {
@@ -678,6 +682,46 @@ img {
   margin-top: 15px;
 }
 
+.newsletter {
+  display: flex;
+  position: relative;
+}
+
+.newsletter-fieldset {
+  position: absolute;
+  width: 358px;
+  height: 50px;
+  border-color: var(--grey);
+  border-radius: 4px;
+}
+
+.newsletter-label {
+  font-weight: 700;
+  margin-top: -40px;
+  position: absolute;
+}
+
+.newsletter-input {
+  display: flex;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--grey);
+}
+
+.newsletter-button {
+  margin-top: 0;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+}
 /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */ /* footer */
 
 /* portfolio */ /* portfolio */ /* portfolio */ /* portfolio */ /* portfolio */ /* portfolio */ /* portfolio */

@@ -87,7 +87,12 @@
                   <svg class="modal-icon">
                     <use href="./images/icons.svg#name"></use>
                   </svg>
-                  <input class="input" type="text" id="name" />
+                  <input
+                    class="input"
+                    type="text"
+                    id="name"
+                    name="write your name"
+                  />
                 </fieldset>
 
                 <fieldset class="fieldset">
@@ -100,6 +105,7 @@
                     type="tel"
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
                     id="telephone"
+                    name="write your phone"
                   />
                 </fieldset>
 
@@ -108,27 +114,32 @@
                   <svg class="modal-icon">
                     <use href="./images/icons.svg#modal-mail"></use>
                   </svg>
-                  <input class="input" type="email" id="email" />
+                  <input
+                    class="input"
+                    type="email"
+                    id="email"
+                    name="write your email"
+                  />
                 </fieldset>
 
-                <fieldset class="fieldset fieldset-comments">
+                <fieldset class="fieldset-comments fieldset">
                   <label for="comments" class="label">Comments</label>
                   <textarea
                     class="textarea-comment input"
                     placeholder="Enter the text"
-                    id="Comments"
-                  >
-                  </textarea>
+                    id="comments"
+                    name="comment"
+                  ></textarea>
                 </fieldset>
 
                 <label class="legal-checkbox">
                   <input type="checkbox" id="legal" />
-
-                  <p class="checkbox">
-                    I agree with the newsletter and accept the Terms and
-                    Conditions
-                  </p>
                   <span class="checkmark"></span>
+                  <p class="checkbox">
+                    I agree with the newsletter and accept the
+                    <a class="modal-terms" href="#"> Terms</a> and
+                    <a class="modal-terms" href="#"> Conditions</a>
+                  </p>
 
                   <button class="form-button buttonjs" type="submit">
                     Send
@@ -535,6 +546,27 @@
               </a>
             </div>
           </div>
+          <form class="my-form newsletter">
+            <fieldset class="newsletter-fieldset">
+              <label class="newsletter-label" for="newsletter"
+                >SUBSCRIBE TO THE NEWSLETTER</label
+              >
+
+              <input
+                class="input"
+                id="newsletter"
+                type="email"
+                placeholder="E-mail"
+                name="write your email"
+              />
+            </fieldset>
+            <button class="buttonjs newsletter-button" type="submit">
+              Subscribe
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </footer>
       </div>
     </div>
